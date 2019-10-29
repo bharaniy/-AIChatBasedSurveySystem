@@ -1,0 +1,32 @@
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<div class="chatbot" >
+  <h2> Review Bot </h2>
+  <span class="userMessage">
+  <div  class="messagefrom" *ngFor="let h of messageArray">
+    <div *ngIf="h.value != '' " >
+      <div class="message" [ngClass]="{ 'from': h.user === 'Bot',
+                                    'to':   h.user === 'You' }">
+    {{ h.value }}
+        </div>
+  </div>
+</div >
+    </span>
+</div>
+<div align="center">
+<input [(ngModel)]="answer" (keyup.enter)="sendMessage()"  type="text" size="60px" class="text">
+<button class="button" (click)="sendMessage()">Send</button>
+  <br>
+<a (click)="initiateRecording()" class="btn btn-primary" *ngIf="!recording" > Start Recording </a><br>
+<a (click)="stopRecording()" class="btn btn-danger" *ngIf="recording"> Stop Recording </a>
+<div class="clearfix"></div><br>
+<audio controls="" *ngIf="url">
+  <source [src]="sanitize(url)" type="audio/wav">
+</audio>
+</div>
+
+
+
+
