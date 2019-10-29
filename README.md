@@ -1,4 +1,27 @@
+# AngMongNodeProject
 
-Project for Advance Software Engineering Course
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.3.
 
-The main objective of this project is to create an AI driven feedback tool. Collecting responses from the users is most important touchpoint for most of the companies. And a recent survey results also predict that most of the users prefer conversational experience is far better than traditional survey experiences. By using this conversational interface an organization can interact with their customers more effectively and get to know about their opinions and what they really want. Conducting this kind of surveys frequently helps the organization to grow.
+## Development server
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Code scaffolding
+
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
