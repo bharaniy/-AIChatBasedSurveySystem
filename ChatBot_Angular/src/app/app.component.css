@@ -1,51 +1,7 @@
-.chatbot{
-  width: 600px;
-  margin: 0 auto;
-  margin-top: 50px;
-  height: 700px;
-  padding: 20px;
-  overflow: scroll;
-  align-self: center;
+.bg {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEbgxcJ5e6TydDjvU41zrqhXp2t5cW-B76NCC0fkXDH87umqxC");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.message.to {
-  background-color: #2095FE;
-  color: #fff;
-  margin-left: 100px;
-  text-align: right;
-}
-.message.from {
-  background-color: darkslateblue;
-  color: #fff;
-  margin-right: 100px;
-
-}
-.button {
-  background-color:  #2095FE;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-}
-.text{
-  height: 50px;
-}
-.userName{
-  color: palevioletred;
-  display: block;
-}
-.userMessage{
-  color: white;
-  display: block;
-}
-.message {
-  border-radius: 50px;
-  margin: 0 15px 20px;
-  padding: 10px 20px;
-  position: relative;
-  font-size: 20px;
-}
-
