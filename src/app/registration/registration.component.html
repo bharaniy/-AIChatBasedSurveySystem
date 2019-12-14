@@ -65,74 +65,110 @@
           <p>Please fill the following details to create a new account.</p>
           <!-- END Register Title -->
 
-          <!-- Register Form -->
-          <form class="js-validation-register form-horizontal push-50-t push-50" id="formData" #userData="ngForm" (ngSubmit)="registerUser(userData.value)">
-            <div class="form-group">
-              <div class="col-xs-12">
-                <div class="form-material form-material-success">
 
-                  <select class="form-control" name="userType" id="userType" style="width: 50%" [(ngModel)]="userType">
-                    <option value="">--Select--</option>
-                    <option value="Global Admin">Global Admin</option>
-                    <option value="Organization Admin">Organization Admin</option>
-                    <option value="Professor">Professor</option>
-                  </select>
-                  <label for="userType">User Type</label>
+            </div>
+          </div>
+          <!-- Register Form -->
+
+      <form class="js-validation-register form-horizontal push-50-t push-50" id="formData1" #user1Data="ngForm" (ngSubmit)="regisProf(user1Data.value)">
+        <div class="form-group">
+          <div class="col-xs-12">
+            <div class="form-material form-material-success">
+
+            </div>
+          </div>
+        </div>
+
+              <div class="form-group">
+                <div class="col-xs-12">
+                  <div class="form-material form-material-success">
+                    <input class="form-control" type="text" id="profId" name="profId" placeholder="Please enter Professor ID" [(ngModel)]="profId"/>
+                    <label for="profId">Professor ID</label>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="form-group">
-              <div class="col-xs-12">
-                <div class="form-material form-material-success">
-                  <input class="form-control" type="text" id="registerUsername" name="registerUsername" placeholder="Please enter a username" [(ngModel)]="registerUsername"/>
-                  <label for="registerUsername">Username</label>
+              <div class="form-group">
+                <div class="col-xs-12">
+                  <div class="form-material form-material-success">
+                    <input class="form-control" type="text" id="profName" name="profName" placeholder="Please enter Professor name" [(ngModel)]="profName"/>
+                    <label for="profName">Professor Name</label>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="form-group">
-              <div class="col-xs-12">
-                <div class="form-material form-material-success">
-                  <input class="form-control" type="email" id="registerEmail" name="registerEmail" placeholder="Please provide your email" [(ngModel)]="registerEmail"/>
-                  <label for="registerEmail">Email</label>
+              <div class="form-group">
+                <div class="col-xs-12">
+                  <div class="form-material form-material-success">
+                    <input class="form-control" type="text" id="orgName1" name="orgName1" placeholder="Please enter Organization Name" [(ngModel)]="orgName1"/>
+                    <label for="orgName1">Organization Name</label>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="form-group">
-              <div class="col-xs-12">
-                <div class="form-material form-material-success">
-                  <input class="form-control" type="password" id="registerPassword" name="registerPassword" placeholder="Choose a strong password.." [(ngModel)]="registerPassword"/>
-                  <label for="registerPassword">Password</label>
+              <div class="form-group">
+                <div class="col-xs-12">
+                  <div class="form-material form-material-success">
+                    <input class="form-control" type="text" id="profMail" name="profMail" placeholder="Please enter Professor email" [(ngModel)]="profMail"/>
+                    <label for="profMail">Professor Mail</label>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="form-group">
-              <div class="col-xs-12">
-                <div class="form-material form-material-success">
-                  <input class="form-control" type="password" id="registerPassword2" name="registerPassword2" placeholder="..and confirm it" [(ngModel)]="registerPassword2"/>
-                  <label for="registerPassword2">Confirm Password</label>
+              <div class="form-group">
+                <div class="col-xs-12">
+                  <div class="form-material form-material-success">
+                    <input class="form-control" type="text" id="orgAddr1" name="orgAddr1" placeholder="Please enter Organization Address" [(ngModel)]="orgAddr1"/>
+                    <label for="orgAddr">Organization Address</label>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="form-group">
-              <div class="col-xs-12">
-                <label class="css-input switch switch-sm switch-success">
-                  <input type="checkbox" id="registerTerms" name="registerTerms"><span></span> I agree with terms &amp; conditions
-                </label>
+              <div class="form-group">
+                <div class="col-xs-12">
+                  <div class="form-material form-material-success">
+                    <input class="form-control" type="text" id="profPhnum" name="profPhnum" placeholder="Please enter professor Phone Number" [(ngModel)]="profPhnum"/>
+                    <label for="profPhnum">Professor Phone Number</label>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="form-group">
-              <div class="col-xs-12 col-sm-6 col-md-5">
-                <button class="btn btn-block btn-success" type="submit"><i class="fa fa-plus pull-right"></i> Sign Up</button>
+              <div class="form-group">
+                <div class="col-xs-12">
+                  <div class="form-material form-material-success">
+                    <input class="form-control" type="password" id="regPassword" name="regPassword" placeholder="Choose a strong password.." [(ngModel)]="regPassword"/>
+                    <label for="regPassword">Password</label>
+                  </div>
+                </div>
               </div>
+              <div class="form-group">
+                <div class="col-xs-12">
+                  <div class="form-material form-material-success">
+                    <input class="form-control" type="password" id="regPassword2" name="regPassword2" placeholder="..and confirm it" [(ngModel)]="regPassword2"/>
+                    <label for="regPassword2">Confirm Password</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-xs-12">
+                  <label class="css-input switch switch-sm switch-success">
+                    <input type="checkbox" id="regTerms" name="registerTerms"><span></span> I agree with terms &amp; conditions
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-xs-12 col-sm-6 col-md-5">
+                  <button class="btn btn-block btn-success" type="submit"><i class="fa fa-plus pull-right"></i> Sign Up</button>
+                </div>
+              </div>
+
+
+      </form>
+
             </div>
-          </form>
+          </div>
+
           <!-- END Register Form -->
         </div>
-      </div>
+
       <!-- END Register Block -->
-    </div>
-  </div>
-</div>
+
+
+
 <!-- END Register Content -->
 
 <!-- END Register Footer -->
